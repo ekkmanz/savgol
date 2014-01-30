@@ -1,7 +1,7 @@
 require 'savgol/core'
 
-class Savgol
-  class Array
+module Savgol
+  module Array
     include Savgol::Core
 
     def savgol(window_size, order, deriv=0, check_args=false)
